@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Titillium+Web&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-grid{
+  width: 1200px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header{
+background-color: #1E1C21;
+  height: 80px;  
+}
+
+.menu{
+width: 660px;
+display: flex;
+justify-content: space-between;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.banner{
+  height: 600px;
+  background-image: url(../img/ImagemBanner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.texto-banner{
+  color:white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  text-align: center; /*Centralizando*/
+}
+
+.posicao-texto{
+ justify-content: flex-end;
+}
+
+.texto-banner h1{
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 70px;
+  font-weight: 900;
+}
+
+.texto-banner a{
+  background-color: #C31616;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px;
+  border-radius: 6px;
+  
+}
+
+.texto-banner p{
+  margin-bottom: 50px;
+}
+
+.section-jogos{
+  background-color: black;
+  height: 100px;
+}
+
+.jogos{
+  /*display: flex;
+  justify-content: space-around;
+  align-items: center;*/
+  height: 100px;
+}
+
+.section-sobre{
+  background-image: url(../img/Fundo.svg);
+  background-repeat: no repeat;
+  background-size: cover;
+}
+
+.texto-sobre{
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.barras{
+  display: none;
+  width: 38px;
+}
+
+.posicionamento-header{
+  position: relative;
+}
+/* desktop */
+@media screen and (max-height: 1200px){
+  .container-grid{
+    width: 90%;
+  }
+  .menu a{
+    font-size: 16px;
+  }
+  .logo{
+    width: 200px;
+  }
+}
+/* tablet */
+@media screen and (max-width:780px) {
+  .menu{
+    display: none;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    right: 60;
+    background-color: #1E1C21;
+  }
+  .barras{
+    display: inline-block;
+  }
+
+  .menu a {
+text-align: right;
+padding: 5px;
+  }
+}
+/* mobile */
